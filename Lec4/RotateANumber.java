@@ -11,6 +11,7 @@ public class RotateANumber {
 		k = k%nod;
 		if(k < 0)
 			k += nod;
+		
 //		System.out.println(k);
 //		for(int i = 1; i <= k; i++)
 //		{
