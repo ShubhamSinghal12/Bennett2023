@@ -17,7 +17,6 @@ public class ConvertBinaryToDecimal {
 			n /= 10;
 		}
 		System.out.println(ans);
-
 	}
 
 }
