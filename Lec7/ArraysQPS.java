@@ -1,3 +1,4 @@
+package Lec7;
 import java.util.Arrays;
 
 public class ArraysQPS {
