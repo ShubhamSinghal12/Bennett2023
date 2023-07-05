@@ -10,8 +10,8 @@ public class Subsequence {
 		
 //		ArrayList<String> ans = subS("abc");
 //		System.out.println(ans);
-//		subS("abc","");
-		AsciisubS("ab", "");
+		subS("abc","");
+//		AsciisubS("ab", "");
 
 	}
 	
@@ -42,8 +42,12 @@ public class Subsequence {
 		}
 		else
 		{
-			subS(ques.substring(1), ans);
+			
+//			ans = ans+ques.charAt(0);
 			subS(ques.substring(1), ans+ques.charAt(0));
+//			ans = ans.substring(0,ans.length()-1);
+			
+			subS(ques.substring(1), ans);
 		}
 	}
 	
