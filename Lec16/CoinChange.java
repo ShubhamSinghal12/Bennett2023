@@ -7,7 +7,8 @@ public class CoinChange {
 		int[] coins = {1,2,5,10};
 		int target = 10;	
 //		ccp(coins, target, "");
-		ccc(coins, target, "", 0);
+//		ccc(coins, target, "", 0);
+		ccc2(coins, 0, target, "");
 	}
 	
 	public static int ccp(int[] coins,int target,String ans)
@@ -51,6 +52,27 @@ public class CoinChange {
 				ct += ccc(coins, target-coins[i], ans+coins[i],i);
 			}
 			return ct;
+		}
+	}
+	
+	public static void ccc2(int[] coins,int i,int target,String ans)
+	{
+		if(target == 0)
+		{
+			System.out.println(ans);
+			return;
+		}
+		else if(i >= coins.length || target < 0)
+		{
+			return;
+		}
+		else
+		{
+			target = target-coins[i];
+			ccc2(coins, i, target, ans+coins[i]);
+			target = target + coins[i];
+			
+			ccc2(coins, i+1, target, ans);
 		}
 	}
 	

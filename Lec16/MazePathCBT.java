@@ -6,7 +6,7 @@ public class MazePathCBT {
 		// TODO Auto-generated method stub
 		boolean grid[][] = new boolean[3][3];
 		mp(grid,0, 0, "");
-
+		
 	}
 	
 	public static void mp(boolean[][] grid,int cr,int cc,String ans)
@@ -32,5 +32,5 @@ public class MazePathCBT {
 			
 		}
 	}
-
+	
 }
